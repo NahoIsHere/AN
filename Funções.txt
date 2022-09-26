@@ -1,3 +1,7 @@
+Variáveis MatLab:
+-eps <- Distância do numero 1 ao seu sucessor, é de grande importância. Tem como valor (2^-52)
+
+
 Função que calcula o polinómio a no ponto x
 --a <- Vetor com os valores do polinómio Ex: [1,23,-4] x^2 + 23x - 4
 --x <- Ponto 
