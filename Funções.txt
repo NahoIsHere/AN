@@ -1,25 +1,21 @@
-Variáveis MatLab:
--eps <- Distância do numero 1 ao seu sucessor, é de grande importância. Tem como valor (2^-52)
-
-
 Função que calcula o polinómio a no ponto x
---a <- Vetor com os valores do polinómio Ex: [1,23,-4] x^2 + 23x - 4
---x <- Ponto 
+    a <- Vetor com os valores do polinómio Ex: [1,23,-4] x^2 + 23x - 4
+    x <- Ponto 
 -horner(a,x)
--Função do matlab com o mesmo comportamento que a horner
+Função do matlab com o mesmo comportamento que a horner
 -Polyval(a,x)
 
 Função que converte um número em binário para decimal
---binStr <- Número binário em string Ex: '10001'
+    binStr <- Número binário em string Ex: '10001'
 -bin2dec(binStr)
 
 Função que converte um número em hexadecimal para décimal
---hexStr <- Número hexadécimal
+    hexStr <- Número hexadécimal
 -hex2dec(hexStr)
 
 Função que converte um número na base n para décimal
---baseStr <- String com o número em base
---n <- Base em que se encontra o número
+    baseStr <- String com o número em base
+    n <- Base em que se encontra o número
 -base2dec(baseStr,n)
 
 Nota: Polyval e horner pode ser usada em vez das funções bin2dec, hex2dec, base2dec

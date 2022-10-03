@@ -1,0 +1,5 @@
+Variáveis MatLab:
+
+eps <- Distância do numero 1 ao seu sucessor, é de grande importância. Tem como valor (2^-52)
+realmax <- 
+realmin <- 
