@@ -4,4 +4,4 @@ eps <- Distância do numero 1 ao seu sucessor, é de grande importância. Tem co
 realmax <- Maior número real representável na normal IEE754 (1.1...1) * 2^1023
 realmin <- Menor número normalizado (1.0...0) * 2^-1022
 Nota: No matlab é possivel representar números menores que o realmin, mas estes não serão
-      normalizados, logo são representados com menor precisão
+      normalizados, logo são representados com men
