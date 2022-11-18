@@ -33,7 +33,7 @@ Função que converte a representação decimal de um inteiro para binário
 
 Função que determina a representação binária de um número fracionário puro
     Dec <- número decimal facrionário
-fracdectobin(Dec)
+-fracdectobin(Dec)
 
 Função que calcula a soma dos termos da série de potências de x para a função 
 exponencial até encontrar um termo cujo valor absoluto é inferior a uma tolerância tol.
@@ -47,3 +47,21 @@ Esta função implementa o método da biseção para aproximar um zero de f
     b <- Segundo elemento do intervalo que contêm pelo menos um zero
     tol <- Tolerância tol (diferença da raiz real (f(x) = 0) e a raiz obtida menor que tol)
 -bisec(f,a,b,tol)
+
+Esta função calcula a soma dos termos da série de potências de x para a função seno
+até encontrar encontrar um termo cujo valor absoluto é inferior a uma tolerância tol
+    x <- Potências de x (vetor)
+    tol <- Tolerância tol = Valor absoluto inferior a tol
+-senoTaylor(x, tol)
+
+Esta função usa a fórmula de Lagrange para calcular o valor do polinómio 
+de grau não superior a n interpolador no ponto x
+    xi <- vetor com os valores dos nós x0,x1,x2
+    yi <- vetor com os valores dos nós depois de aplicada a função
+    x <- Valor do ponto x
+-poLagrange (xi,yi,x)
+
+Arredonda os valores de uam matrix em t algarismos (Não tenho a certeza se faz isto)
+    x <- Matriz
+    t <- Algarismos significativos desejados
+-chop(x, t)
