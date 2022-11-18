@@ -1,0 +1,49 @@
+Função que calcula o polinómio a no ponto x
+    a <- Vetor com os valores do polinómio Ex: [1,23,-4] x^2 + 23x - 4
+    x <- Ponto 
+-horner(a,x)
+Função do matlab com o mesmo comportamento que a horner
+-Polyval(a,x)
+
+Função que converte um número em binário para decimal
+    binStr <- Número binário em string Ex: '10001'
+-bin2dec(binStr)
+
+Função que converte um número em hexadecimal para décimal
+    hexStr <- Número hexadécimal
+-hex2dec(hexStr)
+
+Função que converte um número na base n para décimal
+    baseStr <- String com o número em base
+    n <- Base em que se encontra o número
+-base2dec(baseStr,n)
+
+Nota: Polyval e horner pode ser usada em vez das funções bin2dec, hex2dec, base2dec
+basta entregar o número como vetor em a e a base como x
+Nota: É possivel tambêm utilizar estas funções (horner e polyval) para representar números
+fracionários na base de 2 em base de 10. Contudo é necessario dar flip aos bits, pois estas 
+funções tratam os indices de forma decrescente, e no caso dos números fracionários 
+temos de tratar de forma crescente. E a base b^-k trans forma em 1/k Ex: -2 = 1/2.
+Ex: Para o número (0.100101) em base 2
+horner([0,1,0,0,1,0,1],1/2) = Errado, mas horner([1,0,1,0,0,1,0],1/2) = Correto
+
+Função que converte a representação decimal de um inteiro para binário
+    N <- Número inteiro
+-intdectobin(N)
+
+Função que determina a representação binária de um número fracionário puro
+    Dec <- número decimal facrionário
+fracdectobin(Dec)
+
+Função que calcula a soma dos termos da série de potências de x para a função 
+exponencial até encontrar um termo cujo valor absoluto é inferior a uma tolerância tol.
+    x <- Potências de x (vetor)
+    tol <- Tolerância tol (valor absoluto menor que tol)
+-expTaylor(x,tol)
+
+Esta função implementa o método da biseção para aproximar um zero de f
+    f <- Função continua f
+    a <- Primeiro elemento do intervalo que contêm pelo menos um zero
+    b <- Segundo elemento do intervalo que contêm pelo menos um zero
+    tol <- Tolerância tol (diferença da raiz real (f(x) = 0) e a raiz obtida menor que tol)
+-bisec(f,a,b,tol)
