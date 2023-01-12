@@ -66,11 +66,6 @@ Arredonda os valores de uam matrix em t algarismos (Não tenho a certeza se faz 
     t <- Algarismos significativos desejados
 -chop(x, t)
 
-Calcula a tabela das diferenças divididas
-    x <- Vectores x (nós)
-    y <- f (valores nodais) (Podemos dar como função)
--TabDifDiv(x,f)
-
 Usa a fórmula de Newton com diferenças divididas
 para calcular o valor do polinómio interpolador no ponto z
 Usa a função TabDifDiv para calcular as diferenças divididas
@@ -117,19 +112,11 @@ Esta função mostra o gráfico do polinómio p no intervalo i = [a,b]
 Esta função faz com que apareca em cima de um grafico passado os pontos que desejamos
 -hold on
 Esta função marca os pontos no gráfico com o objeto que quisermos
-    x <- Vetor com as Abcissas dos pontos (x)
-    v <- Vetor com os Valores(Ordenada) dos pontos em x (y)-0
+    x <- Abcissas dos pontos (x)
+    v <- Valores(Ordenada) dos pontos (y)
     mark <- Marca que aparece no gráfico
 -plot(x,values,mark)
 
 Nota: fplot(p,i) seguida de hold on, plot(points,values,mark) mostra um grafico do polinomio p
-no intervalo i, com os pontos de abcissas x e ordenadas v marcados no grafico com o 
+no intervalo i, com os pontos de abcissas points e ordenada values marcados no grafico com o 
 objeto mark
-
-Cria a matriz de Vandermonde
-    x <- Valores dos nós de interpolação (x)
--vander(x)
-
-Calcula o determinante da matriz V
-    m <- Matriz
--det(m)
